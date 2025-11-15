@@ -163,9 +163,9 @@ $products = [
         'price' => 998,
         'regular_price' => 1440,
         'shipping' => 0,
-        'discount_text' => 'SAVE ৳442 + DELIVERY CHARGE FREE',
-        'save_text' => '',
-        'badge' => 'FREE DELIVERY',
+        'discount_text' => 'SAVE ৳442 ',
+        'save_text' => 'SAVE ৳442',
+        'badge' => '',
         'checked' => false
     ]
 ];
@@ -787,7 +787,7 @@ $icons = [
         }
 
         /* Reviews */
-        .reviews {
+        /* .reviews {
             background: #f8f9fa;
             padding: 60px 20px;
         }
@@ -813,7 +813,7 @@ $icons = [
             width: 100%;
             border-radius: 10px;
             margin-bottom: 15px;
-        }
+        } */
 
         /* Footer */
         footer {
@@ -1007,22 +1007,67 @@ $icons = [
     <h2 class="original-section-title"><?php echo $reviews['title']; ?></h2>
 
     <!-- Reviews Section -->
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style>
+        .reviews {
+            padding: 40px 0;
+        }
+
+        .reviews-slider .review-card {
+            padding: 10px;
+        }
+
+        .reviews-slider .review-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff5722;
+            padding: 12px 25px;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
     <section class="reviews">
         <div class="container">
             <div class="reviews-slider">
                 <?php foreach ($reviews['images'] as $review): ?>
-                <div class="review-card">
-                    <img src="<?php echo $review['src']; ?>" alt="<?php echo $review['alt']; ?>">
-                </div>
+                    <div class="review-card">
+                        <img src="<?php echo $review['src']; ?>" alt="<?php echo $review['alt']; ?>">
+                    </div>
                 <?php endforeach; ?>
             </div>
-
             <div style="text-align: center; margin-top: 40px;">
                 <a href="#order" class="cta-button"><?php echo $reviews['cta_button']; ?></a>
                 <p style="margin-top: 10px; color: #666;"><?php echo $reviews['cta_subtext']; ?></p>
             </div>
         </div>
     </section>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.reviews-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            arrows: false,
+            dots: true,
+            responsive: [
+                { breakpoint: 992, settings: { slidesToShow: 2 } },
+                { breakpoint: 768, settings: { slidesToShow: 1 } }
+            ]
+        });
+    </script>
+
 
     <!-- Pricing Section -->
     <section class="pricing">
@@ -1214,7 +1259,8 @@ $icons = [
         </a>
     </div>
 
-    <script>
+  
+  <script>
         // Countdown Timer
         function startCountdown() {
             const endDate = new Date();
@@ -1243,47 +1289,44 @@ $icons = [
         }
 
         // Order Calculation
-        function updateOrderSummary() {
-            const selectedProduct = document.querySelector('input[name="product"]:checked');
-            const selectedShipping = document.querySelector('input[name="shipping"]:checked');
+function updateOrderSummary() {
+    const selectedProduct = document.querySelector('input[name="product"]:checked');
+    const selectedShipping = document.querySelector('input[name="shipping"]:checked');
+    const qty = parseInt(document.querySelector('td input[type="text"]').value); // GET QUANTITY
 
-            if (!selectedProduct || !selectedShipping) return;
+    if (!selectedProduct || !selectedShipping) return;
 
-            const productOption = selectedProduct.closest('.product-option');
-            const productPrice = parseInt(productOption.dataset.price);
-            const shippingPrice = parseInt(selectedShipping.dataset.cost);
+    const productOption = selectedProduct.closest('.product-option');
+    const productPrice = parseInt(productOption.dataset.price);
+    const shippingPrice = parseInt(selectedShipping.dataset.cost);
 
-            const finalShipping = selectedProduct.value === '2-box' ? 0 : shippingPrice;
-            const total = productPrice + finalShipping;
+    // Calculate totals
+    const productTotal = productPrice * qty;
+    const subtotal = productTotal;
+    const total = subtotal + shippingPrice;
 
-            const productName = selectedProduct.value === '1-box' ?
-                '<?php echo $products[0]['name']; ?>' :
-                '<?php echo $products[1]['name']; ?>';
+    // Set product data
+    const productName = selectedProduct.value === '1-box'
+        ? '<?php echo $products[0]['name']; ?>'
+        : '<?php echo $products[1]['name']; ?>';
 
-            const productBadge = selectedProduct.value === '1-box' ?
-                '<?php echo $products[0]['save_text']; ?>' :
-                '<?php echo $products[1]['discount_text']; ?>';
+    const productBadge = selectedProduct.value === '1-box'
+        ? '<?php echo $products[0]['save_text']; ?>'
+        : '<?php echo $products[1]['save_text']; ?>';
 
-            document.getElementById('productDisplay').textContent = productName;
-            document.getElementById('productBadge').textContent = productBadge;
-            document.getElementById('productPriceDisplay').innerHTML = '৳' + productPrice.toFixed(2);
-            document.getElementById('productName').textContent = productName + ' × 1';
-            document.getElementById('subtotal').textContent = '৳' + productPrice.toFixed(2);
-            document.getElementById('subtotalAmount').textContent = '৳' + productPrice.toFixed(2);
-            document.getElementById('total').textContent = '৳' + total.toFixed(2);
-            document.getElementById('orderTotal').textContent = '৳' + total.toFixed(2);
+    // Update HTML
+    document.getElementById('productDisplay').textContent = productName;
+    document.getElementById('productBadge').textContent = productBadge;
+    document.getElementById('productPriceDisplay').innerHTML = '৳' + productPrice.toFixed(2);
 
-            if (selectedProduct.value === '2-box') {
-                document.querySelectorAll('input[name="shipping"]').forEach(radio => {
-                    radio.parentElement.style.display = 'none';
-                });
-                document.querySelector('.summary-row:nth-child(4) span:last-child').innerHTML = '<span style="color: #4caf50; font-weight: 600;">FREE</span>';
-            } else {
-                document.querySelectorAll('input[name="shipping"]').forEach(radio => {
-                    radio.parentElement.style.display = 'flex';
-                });
-            }
-        }
+    document.getElementById('productName').textContent = productName + ' × ' + qty;
+    document.getElementById('subtotal').textContent = '৳' + productTotal.toFixed(2);
+    document.getElementById('subtotalAmount').textContent = '৳' + subtotal.toFixed(2);
+
+    document.getElementById('total').textContent = '৳' + total.toFixed(2);
+    document.getElementById('orderTotal').textContent = '৳' + total.toFixed(2);
+}
+
 
         // Product Selection
         document.querySelectorAll('input[name="product"]').forEach(radio => {
@@ -1324,7 +1367,26 @@ $icons = [
                 }
             });
         });
+// Quantity Counter
+ const minusBtn = document.querySelector('td button:first-child');
+const plusBtn = document.querySelector('td button:last-child');
+const qtyInput = document.querySelector('td input[type="text"]');
 
+plusBtn.addEventListener('click', () => {
+    let qty = parseInt(qtyInput.value);
+    qty++;
+    qtyInput.value = qty;
+    updateOrderSummary();
+});
+
+minusBtn.addEventListener('click', () => {
+    let qty = parseInt(qtyInput.value);
+    if (qty > 1) {
+        qty--;
+        qtyInput.value = qty;
+        updateOrderSummary();
+    }
+});
         // Form Validation
         document.getElementById('orderForm').addEventListener('submit', function(e) {
             const phone = document.getElementById('phone').value;
@@ -1338,7 +1400,7 @@ $icons = [
         // Initialize
         startCountdown();
         updateOrderSummary();
-        document.getElementById('product1').closest('.product-option').style.borderColor = '#0030FF';
+    
     </script>
 </body>
 </html>

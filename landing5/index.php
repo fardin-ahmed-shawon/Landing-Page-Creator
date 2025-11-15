@@ -1,13 +1,191 @@
+<?php
+// Site Configuration
+$site_title = "শাহী সিডমিক্স - Dhaka Food Service";
+$site_language = "bn";
+$site_charset = "UTF-8";
+
+// Header Section
+$header = array(
+    'logo_text' => "DHAKA FOOD SERVICE"
+);
+
+// Hero Section
+$hero_section = array(
+    'title' => "মেষ, চরি, গুজরাট, মাল্টিগ্রেইন ও কোষ্ঠকাঠিন্যে কমান প্রাকৃতিকভাবে - ",
+    'product_name' => "শাহী সিডমিক্স!",
+    'description' => "\"শাহী সিডমিক্স\"-এ রয়েছে এমন সব প্রাকৃতিক উপাদান, যা প্রোটিন, ফ্যাটিবার, ক্যালসিয়াম, ম্যাগনেসিয়াম, জিংক, কপার এবং ওমেগা-৩ এর মতো গুরুত্বপূর্ণ পুষ্টিগুণে পরিপূর্ণ।"
+);
+
+// Countdown Section
+$countdown_section = array(
+    'title' => "⚠️ বিশেষ অফারটি সীমিত সময়ের জন্য",
+    'initial_days' => "12",
+    'initial_hours' => "46", 
+    'initial_minutes' => "57"
+);
+
+// Product Hero Section
+$product_hero = array(
+    'image' => "images/hero.webp",
+    'alt' => "hero.webp"
+);
+
+// Features Section
+$features_section = array(
+    'title' => "\"শাহী সিডমিক্স\" কেন খাবেন?",
+    'features' => array(
+        "এটি রয়েছে ন্যাচারাল উপাদান যা আপনার দেহকে শক্তিশালী এবং সুস্থ করে তোলে।",
+        "দুধের সাথে মিশিয়ে খেলে আপনার স্বাস্থ্য ও সতেজতা বৃদ্ধি পায়।",
+        "হজমে, ভিটামিন সি, ও সেলিনিয়াম পূর্ণ কম্বিনেশন নেওয়ার চমৎকার উপায়।",
+        "দৃষ্টিশক্তি ও চোখের স্বাস্থ্যের জন্য অত্যন্ত উপকারী।",
+        "গর্ভাবস্থায় প্রয়োজনীয় মিনারেল ও পুষ্টি সরবরাহ করে।"
+    )
+);
+
+// Seed Mix Details Section
+$seedmix_section = array(
+    'title' => "এক চামচ SeedMix-এ হয় উপাদের ৩T",
+    'image' => "images/bannerbelow.webp",
+    'alt' => "bannerbelow.webp"
+);
+
+// Reviews Section
+$reviews_section = array(
+    'title' => "আমাদের এই \"শাহী সিডমিক্স\" সম্পর্কে সম্মানিত ক্রাহকদের কিছু মন্তব্য",
+    'reviews' => array(
+        array(
+            'image' => "images/review.webp",
+            'alt' => "review.webp",
+            'text' => "\"শাহী সিডমিক্স ব্যবহার করার পর থেকে আমার স্বাস্থ্যের উন্নতি হয়েছে। এটি সত্যিই অসাধারণ!\"",
+            'avatar' => "র",
+            'name' => "রহিমা বেগম",
+            'location' => "ঢাকা"
+        ),
+        array(
+            'image' => "images/review.webp",
+            'alt' => "review.webp",
+            'text' => "\"আমার কোষ্ঠকাঠিন্যের সমস্যা অনেক কমেছে। প্রতিদিন সকালে দুধের সাথে খাই, খুবই উপকার পাচ্ছি।\"",
+            'avatar' => "ক",
+            'name' => "কামরুল হাসান",
+            'location' => "চট্টগ্রাম"
+        ),
+        array(
+            'image' => "images/review.webp",
+            'alt' => "review.webp",
+            'text' => "\"গর্ভাবস্থায় আমার ডাক্তার এই সিডমিক্স খাওয়ার পরামর্শ দিয়েছিলেন। এখন আমার শিশুও সুস্থ আছে।\"",
+            'avatar' => "স",
+            'name' => "সাবরিনা আক্তার",
+            'location' => "সিলেট"
+        ),
+        array(
+            'image' => "images/review.webp",
+            'alt' => "review.webp",
+            'text' => "\"দীর্ঘদিন ধরে হজমের সমস্যা ছিল। শাহী সিডমিক্স খাওয়ার পর থেকে সমস্যা অনেক কমেছে।\"",
+            'avatar' => "ম",
+            'name' => "মোহাম্মদ আলী",
+            'location' => "রাজশাহী"
+        ),
+        array(
+            'image' => "images/review.webp",
+            'alt' => "review.webp",
+            'text' => "\"ওজন কমাতে সাহায্য করেছে এবং শরীরে শক্তি বেড়েছে। সত্যিই চমৎকার একটি পণ্য।\"",
+            'avatar' => "ফ",
+            'name' => "ফারহানা ইসলাম",
+            'location' => "খুলনা"
+        )
+    )
+);
+
+// Order Form Section
+$order_form = array(
+    'title' => "অর্ডার করতে এখানেই নিচের তথ্যটি পূরণ করুন"
+);
+
+// Form Labels
+$form_labels = array(
+    'phone' => "আপনার ১১ ডিজিটের মোবাইল নম্বর *",
+    'address' => "সম্পূর্ণ ঠিকানা: বাসা, রোড, থানা *",
+    'country' => "Country / Region *"
+);
+
+// Product Options
+$product_options = array(
+    array(
+        'id' => "product1",
+        'value' => "17",
+        'name' => "শাহী সিডমিক্স - ১৭ শাই",
+        'price' => "1250",
+        'original_price' => "1500",
+        'shipping' => "150",
+        'highlight' => false
+    ),
+    array(
+        'id' => "product2", 
+        'value' => "500",
+        'name' => "শাহী সিডমিক্স - ৫০০ গ্রাম",
+        'price' => "600",
+        'original_price' => "800",
+        'shipping' => "100",
+        'highlight' => false
+    ),
+    array(
+        'id' => "product3",
+        'value' => "250",
+        'name' => "শাহী সিডমিক্স - ২৫০ গ্রাম",
+        'price' => "350",
+        'original_price' => "500",
+        'shipping' => "100",
+        'highlight' => true
+    )
+);
+
+// Order Summary
+$order_summary = array(
+    'title' => "আপনার অর্ডার",
+    'product' => "PRODUCT",
+    'subtotal' => "Subtotal",
+    'shipping' => "Shipping",
+    'total' => "Total"
+);
+
+// Payment Info
+$payment_info = array(
+    'title' => "💵 ক্যাশ অন ডেলিভারি",
+    'description' => "পণ্য হাতে পেয়ে টাকা পরিশোধ করুন।"
+);
+
+// Privacy Notice
+$privacy_notice = "আপনার ব্যক্তিগত তথ্য আপনার অর্ডার প্রসেস করতে, এই ওয়েবসাইট জুড়ে আপনার অভিজ্ঞতা সমর্থন করতে এবং আমাদের গোপনীয়তা নীতিতে বর্ণিত অন্যান্য উদ্দেশ্যে ব্যবহার করা হবে।";
+
+// Submit Button
+$submit_button = "🔒 অর্ডার করুন";
+
+// Footer Section
+$footer = array(
+    'contact_title' => "আরো জানতে কল করুন!",
+    'phone_number' => "01947-001199",
+    'copyright' => "© 2025 Dhaka Food Service. সর্বস্বত্ব সংরক্ষিত"
+);
+
+// Sticky CTA
+$sticky_cta = array(
+    'text' => "🛒 অর্ডার করতে চাই"
+);
+
+// CTA Button Text
+$cta_button_text = "এখনই অর্ডার করুন";
+?>
+
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="<?php echo $site_language; ?>">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php echo $site_charset; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>শাহী সিডমিক্স - Dhaka Food Service</title>
+    <title><?php echo $site_title; ?></title>
     <!-- Swiper JS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <style>
+            <style>
         * {
             margin: 0;
             padding: 0;
@@ -695,7 +873,7 @@ min-width: 300px;
                     <rect fill="#2d5016" width="200" height="60" rx="8" />
                     <path d="M 100 10 L 110 20 L 105 25 L 95 25 L 90 20 Z" fill="#4caf50" />
                     <path d="M 95 25 L 105 25 L 103 35 L 97 35 Z" fill="#66bb6a" />
-                    <text x="100" y="48" font-size="14" font-weight="bold" text-anchor="middle" fill="#fff" font-family="Arial">DHAKA FOOD SERVICE</text>
+                    <text x="100" y="48" font-size="14" font-weight="bold" text-anchor="middle" fill="#fff" font-family="Arial"><?php echo $header['logo_text']; ?></text>
                 </svg>
             </div>
         </div>
@@ -704,26 +882,26 @@ min-width: 300px;
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>মেষ, চরি, গুজরাট, মাল্টিগ্রেইন ও কোষ্ঠকাঠিন্যে কমান প্রাকৃতিকভাবে - <span class="product-name">শাহী সিডমিক্স!</span></h1>
-            <p>"শাহী সিডমিক্স"-এ রয়েছে এমন সব প্রাকৃতিক উপাদান, যা প্রোটিন, ফ্যাটিবার, ক্যালসিয়াম, ম্যাগনেসিয়াম, জিংক, কপার এবং ওমেগা-৩ এর মতো গুরুত্বপূর্ণ পুষ্টিগুণে পরিপূর্ণ।</p>
+            <h1><?php echo $hero_section['title']; ?><span class="product-name"><?php echo $hero_section['product_name']; ?></span></h1>
+            <p><?php echo $hero_section['description']; ?></p>
         </div>
     </section>
 
     <!-- Countdown Timer -->
     <section class="countdown-section">
         <div class="container">
-            <h3>⚠️ বিশেষ অফারটি সীমিত সময়ের জন্য</h3>
+            <h3><?php echo $countdown_section['title']; ?></h3>
             <div class="countdown">
                 <div class="countdown-item">
-                    <span id="days">12</span>
+                    <span id="days"><?php echo $countdown_section['initial_days']; ?></span>
                     <label>দিন</label>
                 </div>
                 <div class="countdown-item">
-                    <span id="hours">46</span>
+                    <span id="hours"><?php echo $countdown_section['initial_hours']; ?></span>
                     <label>ঘন্টা</label>
                 </div>
                 <div class="countdown-item">
-                    <span id="minutes">57</span>
+                    <span id="minutes"><?php echo $countdown_section['initial_minutes']; ?></span>
                     <label>মিনিট</label>
                 </div>
             </div>
@@ -734,33 +912,23 @@ min-width: 300px;
     <section class="product-hero">
         <div class="container">
             <div class="seed-bowls">
-                <img src="images/hero.webp" alt="hero.webp">
+                <img src="<?php echo $product_hero['image']; ?>" alt="<?php echo $product_hero['alt']; ?>">
             </div>
         </div>
     </section>
 
-    <h2 class="section-title"><span class="highlight">"শাহী সিডমিক্স"</span> কেন খাবেন?</h2>
+    <h2 class="section-title"><span class="highlight"><?php echo $features_section['title']; ?></span></h2>
 
     <!-- Features List -->
     <section class="features-list">
         <div class="features-container">
+            <?php foreach($features_section['features'] as $feature): ?>
             <div class="feature-item">
-                এটি রয়েছে ন্যাচারাল উপাদান যা আপনার দেহকে শক্তিশালী এবং সুস্থ করে তোলে।
+                <?php echo $feature; ?>
             </div>
-            <div class="feature-item">
-                দুধের সাথে মিশিয়ে খেলে আপনার স্বাস্থ্য ও সতেজতা বৃদ্ধি পায়।
-            </div>
-            <div class="feature-item">
-                হজমে, ভিটামিন সি, ও সেলিনিয়াম পূর্ণ কম্বিনেশন নেওয়ার চমৎকার উপায়।
-            </div>
-            <div class="feature-item">
-                দৃষ্টিশক্তি ও চোখের স্বাস্থ্যের জন্য অত্যন্ত উপকারী।
-            </div>
-            <div class="feature-item">
-                গর্ভাবস্থায় প্রয়োজনীয় মিনারেল ও পুষ্টি সরবরাহ করে।
-            </div>
+            <?php endforeach; ?>
             <div style="text-align: center; margin-top: 30px;">
-                <button class="cta-button" onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})">এখনই অর্ডার করুন</button>
+                <button class="cta-button" onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})"><?php echo $cta_button_text; ?></button>
             </div>
         </div>
     </section>
@@ -768,14 +936,14 @@ min-width: 300px;
     <!-- Seed Mix Details -->
     <section class="seedmix-details">
         <div class="container">
-            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 20px; color: #2d5016;">এক চামচ SeedMix-এ হয় উপাদের ৩T</h2>
+            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 20px; color: #2d5016;"><?php echo $seedmix_section['title']; ?></h2>
             <div class="seedmix-image">
-                <img src="images/bannerbelow.webp" alt="bannerbelow.webp">
+                <img src="<?php echo $seedmix_section['image']; ?>" alt="<?php echo $seedmix_section['alt']; ?>">
             </div>
         </div>
     </section>
 
-    <h2 class="section-title">আমাদের এই <span class="highlight">"শাহী সিডমিক্স"</span> সম্পর্কে সম্মানিত ক্রাহকদের কিছু মন্তব্য</h2>
+    <h2 class="section-title"><?php echo $reviews_section['title']; ?></h2>
 
     <!-- Reviews -->
     <section class="reviews">
@@ -783,81 +951,23 @@ min-width: 300px;
             <!-- Swiper -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
+                    <?php foreach($reviews_section['reviews'] as $review): ?>
                     <div class="swiper-slide">
                         <div class="review-card">
-                            <img src="images/review.webp" alt="review.webp">
+                            <img src="<?php echo $review['image']; ?>" alt="<?php echo $review['alt']; ?>">
                             <div class="review-text">
-                                "শাহী সিডমিক্স ব্যবহার করার পর থেকে আমার স্বাস্থ্যের উন্নতি হয়েছে। এটি সত্যিই অসাধারণ!"
+                                <?php echo $review['text']; ?>
                             </div>
                             <div class="reviewer-info">
-                                <div class="reviewer-avatar">র</div>
+                                <div class="reviewer-avatar"><?php echo $review['avatar']; ?></div>
                                 <div class="reviewer-details">
-                                    <h4>রহিমা বেগম</h4>
-                                    <p>ঢাকা</p>
+                                    <h4><?php echo $review['name']; ?></h4>
+                                    <p><?php echo $review['location']; ?></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <img src="images/review.webp" alt="review.webp">
-                            <div class="review-text">
-                                "আমার কোষ্ঠকাঠিন্যের সমস্যা অনেক কমেছে। প্রতিদিন সকালে দুধের সাথে খাই, খুবই উপকার পাচ্ছি।"
-                            </div>
-                            <div class="reviewer-info">
-                                <div class="reviewer-avatar">ক</div>
-                                <div class="reviewer-details">
-                                    <h4>কামরুল হাসান</h4>
-                                    <p>চট্টগ্রাম</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <img src="images/review.webp" alt="review.webp">
-                            <div class="review-text">
-                                "গর্ভাবস্থায় আমার ডাক্তার এই সিডমিক্স খাওয়ার পরামর্শ দিয়েছিলেন। এখন আমার শিশুও সুস্থ আছে।"
-                            </div>
-                            <div class="reviewer-info">
-                                <div class="reviewer-avatar">স</div>
-                                <div class="reviewer-details">
-                                    <h4>সাবরিনা আক্তার</h4>
-                                    <p>সিলেট</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <img src="images/review.webp" alt="review.webp">
-                            <div class="review-text">
-                                "দীর্ঘদিন ধরে হজমের সমস্যা ছিল। শাহী সিডমিক্স খাওয়ার পর থেকে সমস্যা অনেক কমেছে।"
-                            </div>
-                            <div class="reviewer-info">
-                                <div class="reviewer-avatar">ম</div>
-                                <div class="reviewer-details">
-                                    <h4>মোহাম্মদ আলী</h4>
-                                    <p>রাজশাহী</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <img src="images/review.webp" alt="review.webp">
-                            <div class="review-text">
-                                "ওজন কমাতে সাহায্য করেছে এবং শরীরে শক্তি বেড়েছে। সত্যিই চমৎকার একটি পণ্য।"
-                            </div>
-                            <div class="reviewer-info">
-                                <div class="reviewer-avatar">ফ</div>
-                                <div class="reviewer-details">
-                                    <h4>ফারহানা ইসলাম</h4>
-                                    <p>খুলনা</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
                 <!-- Navigation buttons -->
                 <div class="swiper-button-next"></div>
@@ -866,7 +976,7 @@ min-width: 300px;
                 <div class="swiper-pagination"></div>
             </div>
             <div style="text-align: center; margin-top: 30px;">
-                <button class="cta-button" onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})">এখনই অর্ডার করুন</button>
+                <button class="cta-button" onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})"><?php echo $cta_button_text; ?></button>
             </div>
         </div>
     </section>
@@ -874,97 +984,83 @@ min-width: 300px;
     <!-- Order Form -->
     <section class="order-form" id="order">
         <div class="container">
-            <h2 class="section-title">অর্ডার করতে এখানেই নিচের তথ্যটি পূরণ করুন</h2>
+            <h2 class="section-title"><?php echo $order_form['title']; ?></h2>
 
             <div class="form-container">
                 <form id="orderForm">
                     <div class="form-grid">
                         <div>
                             <div class="form-group">
-                                <label>আপনার ১১ ডিজিটের মোবাইল নম্বর *</label>
+                                <label><?php echo $form_labels['phone']; ?></label>
                                 <input type="tel" required pattern="[0-9]{11}" placeholder="01XXXXXXXXX">
                             </div>
 
                             <div class="form-group">
-                                <label>সম্পূর্ণ ঠিকানা: বাসা, রোড, থানা *</label>
+                                <label><?php echo $form_labels['address']; ?></label>
                                 <textarea rows="3" required placeholder="আপনার সম্পূর্ণ ঠিকানা লিখুন"></textarea>
                             </div>
 
                             <div class="form-group">
-                                <label>Country / Region *</label>
+                                <label><?php echo $form_labels['country']; ?></label>
                                 <input type="text" value="Bangladesh" readonly style="background: #f0f0f0;">
                             </div>
 
                             <h3 style="margin: 20px 0 15px; font-size: 1.1rem;">Your Products</h3>
 
-                            <div class="product-option" data-price="1250" data-shipping="150">
-                                <input type="radio" name="product" id="product1" value="17" checked>
-                                <label for="product1">
-                                    <h4>শাহী সিডমিক্স - ১৭ শাই</h4>
+                            <?php foreach($product_options as $product): ?>
+                            <div class="product-option <?php echo $product['highlight'] ? 'highlight' : ''; ?>" data-price="<?php echo $product['price']; ?>" data-shipping="<?php echo $product['shipping']; ?>">
+                                <input type="radio" name="product" id="<?php echo $product['id']; ?>" value="<?php echo $product['value']; ?>" <?php echo $product['id'] === 'product1' ? 'checked' : ''; ?>>
+                                <label for="<?php echo $product['id']; ?>">
+                                    <h4><?php echo $product['name']; ?></h4>
                                 </label>
-                                <p>Price: <del>৳1,500</del> <strong style="color: #dc3545; font-size: 1.1rem;">৳ 1,250.00</strong></p>
+                                <p>Price: <del>৳<?php echo $product['original_price']; ?></del> <strong style="color: #dc3545; font-size: 1.1rem;">৳ <?php echo number_format($product['price'], 2); ?></strong></p>
                             </div>
-
-                            <div class="product-option" data-price="600" data-shipping="100">
-                                <input type="radio" name="product" id="product2" value="500">
-                                <label for="product2">
-                                    <h4>শাহী সিডমিক্স - ৫০০ গ্রাম</h4>
-                                </label>
-                                <p>Price: <del>৳800</del> <strong style="color: #dc3545; font-size: 1.1rem;">৳ 600.00</strong></p>
-                            </div>
-
-                            <div class="product-option highlight" data-price="350" data-shipping="100">
-                                <input type="radio" name="product" id="product3" value="250">
-                                <label for="product3">
-                                    <h4>শাহী সিডমিক্স - ২৫০ গ্রাম</h4>
-                                </label>
-                                <p>Price: <del>৳500</del> <strong style="color: #dc3545; font-size: 1.1rem;">৳ 350.00</strong></p>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
 
                         <div>
                             <div class="order-summary">
-                                <h3>আপনার অর্ডার</h3>
+                                <h3><?php echo $order_summary['title']; ?></h3>
 
                                 <div class="summary-row">
-                                    <span><strong>PRODUCT</strong></span>
-                                    <span><strong>SUBTOTAL</strong></span>
+                                    <span><strong><?php echo $order_summary['product']; ?></strong></span>
+                                    <span><strong><?php echo $order_summary['subtotal']; ?></strong></span>
                                 </div>
 
                                 <div class="summary-row">
-                                    <span id="productName">শাহী সিডমিক্স - ১৭ শাই × 1</span>
-                                    <span id="productPrice">৳ 1,250.00</span>
+                                    <span id="productName"><?php echo $product_options[0]['name']; ?> × 1</span>
+                                    <span id="productPrice">৳ <?php echo number_format($product_options[0]['price'], 2); ?></span>
                                 </div>
 
                                 <div class="summary-row">
-                                    <span>Subtotal</span>
-                                    <span id="subtotal">৳ 1,250.00</span>
+                                    <span><?php echo $order_summary['subtotal']; ?></span>
+                                    <span id="subtotal">৳ <?php echo number_format($product_options[0]['price'], 2); ?></span>
                                 </div>
 
                                 <div class="summary-row">
-                                    <span>Shipping</span>
-                                    <span id="shipping">ঢাকায় বাইরে ৳ 150.00</span>
+                                    <span><?php echo $order_summary['shipping']; ?></span>
+                                    <span id="shipping">ঢাকায় বাইরে ৳ <?php echo number_format($product_options[0]['shipping'], 2); ?></span>
                                 </div>
 
                                 <div class="summary-row summary-total">
-                                    <span>Total</span>
-                                    <span id="total">৳ 1,400.00</span>
+                                    <span><?php echo $order_summary['total']; ?></span>
+                                    <span id="total">৳ <?php echo number_format($product_options[0]['price'] + $product_options[0]['shipping'], 2); ?></span>
                                 </div>
                             </div>
 
                             <div style="margin-top: 20px; padding: 15px; background: #fff3cd; border-radius: 5px; border-left: 4px solid #ffc107;">
                                 <p style="margin: 0; font-size: 0.9rem; color: #856404;">
-                                    <strong>💵 ক্যাশ অন ডেলিভারি</strong><br>
-                                    পণ্য হাতে পেয়ে টাকা পরিশোধ করুন।
+                                    <strong><?php echo $payment_info['title']; ?></strong><br>
+                                    <?php echo $payment_info['description']; ?>
                                 </p>
                             </div>
 
                             <p style="margin-top: 15px; font-size: 0.85rem; color: #666; line-height: 1.5;">
-                                আপনার ব্যক্তিগত তথ্য আপনার অর্ডার প্রসেস করতে, এই ওয়েবসাইট জুড়ে আপনার অভিজ্ঞতা সমর্থন করতে এবং আমাদের গোপনীয়তা নীতিতে বর্ণিত অন্যান্য উদ্দেশ্যে ব্যবহার করা হবে।
+                                <?php echo $privacy_notice; ?>
                             </p>
 
                             <button type="submit" class="submit-btn">
-                                🔒 অর্ডার করুন <span id="orderTotal">৳ 1,400.00</span>
+                                <?php echo $submit_button; ?> <span id="orderTotal">৳ <?php echo number_format($product_options[0]['price'] + $product_options[0]['shipping'], 2); ?></span>
                             </button>
                         </div>
                     </div>
@@ -976,16 +1072,16 @@ min-width: 300px;
     <!-- Footer -->
     <footer>
         <div class="container">
-            <h2 class="footer-contact">আরো জানতে কল করুন!</h2>
-            <p style="font-size: 1.8rem; font-weight: bold; margin: 15px 0;">📞 01947-001199</p>
-            <p style="margin-top: 20px; opacity: 0.8;">© 2025 Dhaka Food Service. সর্বস্বত্ব সংরক্ষিত</p>
+            <h2 class="footer-contact"><?php echo $footer['contact_title']; ?></h2>
+            <p style="font-size: 1.8rem; font-weight: bold; margin: 15px 0;">📞 <?php echo $footer['phone_number']; ?></p>
+            <p style="margin-top: 20px; opacity: 0.8;"><?php echo $footer['copyright']; ?></p>
         </div>
     </footer>
 
     <!-- Sticky CTA -->
     <div class="sticky-cta" id="stickyCta">
         <button class="cta-button" onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})">
-            🛒 অর্ডার করতে চাই
+            <?php echo $sticky_cta['text']; ?>
         </button>
     </div>
 
@@ -1024,9 +1120,9 @@ min-width: 300px;
 
         // Countdown Timer
         function startCountdown() {
-            let days = 12;
-            let hours = 46;
-            let minutes = 57;
+            let days = <?php echo $countdown_section['initial_days']; ?>;
+            let hours = <?php echo $countdown_section['initial_hours']; ?>;
+            let minutes = <?php echo $countdown_section['initial_minutes']; ?>;
 
             function updateCountdown() {
                 minutes--;
@@ -1054,23 +1150,15 @@ min-width: 300px;
         }
 
         // Product Selection and Price Calculation
-        const products = {
-            '17': {
-                name: 'শাহী সিডমিক্স - ১৭ শাই',
-                price: 1250,
-                original: 1500
-            },
-            '500': {
-                name: 'শাহী সিডমিক্স - ৫০০ গ্রাম',
-                price: 600,
-                original: 800
-            },
-            '250': {
-                name: 'শাহী সিডমিক্স - ২৫০ গ্রাম',
-                price: 350,
-                original: 500
-            }
-        };
+        const products = [
+            <?php foreach($product_options as $product): ?>
+            '<?php echo $product['value']; ?>': {
+                name: '<?php echo $product['name']; ?>',
+                price: <?php echo $product['price']; ?>,
+                original: <?php echo $product['original_price']; ?>
+            }<?php echo $product !== end($product_options) ? ',' : ''; ?>
+            <?php endforeach; ?>
+        ];
 
         function updateOrderSummary() {
             const selectedProduct = document.querySelector('input[name="product"]:checked');
@@ -1138,5 +1226,4 @@ min-width: 300px;
         document.getElementById('product1').closest('.product-option').classList.add('selected');
     </script>
 </body>
-
 </html>

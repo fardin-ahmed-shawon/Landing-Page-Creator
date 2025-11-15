@@ -1,12 +1,122 @@
+<?php
+// Site Configuration
+$site_title = "Mens Premium Boxer - Combo Pack | FitZen";
+$site_language = "bn";
+$site_charset = "UTF-8";
+
+// Hero Banner Section
+$hero_banner = array(
+    'line1' => "৩ পিচ প্রিমিয়াম বক্সার -",
+    'line2' => "৪৯৯ টাকা মাত্র",
+    'line3' => "ডেলিভার চার্জ ফ্রি"
+);
+
+// Quality Badge Section
+$quality_badge = "১০০% ফ্যাশিক কাস্টমার";
+
+// CTA Section
+$cta_button_text = "অর্ডার করতে ক্লিক করুন";
+
+// Notice Box Section
+$notice_text = "আমরা নিচ্চিত সম্পূর্ণ কম্বো স্পেক্ট্রর কাপড় দিয়ে ডেরি খাকিনা খুবি কয়েক্টাই।";
+
+// Product Images
+$product_images = array(
+    'showcase' => "images/landing2hero.jpg",
+    'form' => "images/landing2form.jpg"
+);
+
+// Price Section
+$price_section = array(
+    'title' => "রেগুলার মূল্য ৭৯৯ টাকা।<br>অফার প্রাইস মাত্র ৪৯৯ টাকা।<br>(ডেলিভার চার্জ ফ্রি)"
+);
+
+// Reviews Section
+$reviews_title = "From Our Happy Customer";
+
+$reviews = array(
+    array(
+        'name' => "Mohammad Abdur Rahim",
+        'text' => "আলহামদুলিল্লাহ!<br>
+                  পৌছেছে পুরুষ মনঃ বুকের ভালো লেগেছে, লম্বন আন্দামহাদের ❤️<br>
+                  এবর তাহ ছেড়াড় বট করা হচ্ছে উনাদের বিতরিত 🔥<br>
+                  আনার ভালো লেগেছে। খর্বা সাম্পা-আবারে ❤️<br>
+                  দেয়া খর্ব গেছে ভাবিন টাইশিমাহার লোগাম্বরু সান করব, আসিন ❤️<br>
+                  আপনাদের উপশর ধন্যবাদ FitZen"
+    ),
+    array(
+        'name' => "Shariful Islam",
+        'text' => "Firstly it's a good quality as a price & gets quick delivery. You guys try to it honestly.<br>
+                  Thanks to FitZen. Keep going...❤️"
+    ),
+    array(
+        'name' => "KamruzZaman Tapu",
+        'text' => "আলহামদুলিল্লাহ, প্রজাই ভাত পেয়েছি।<br>
+                  আনেক ভালো এবর সফট। হাইলি<br>
+                  রিকমান্ডেড।।"
+    )
+);
+
+// Product Details
+$product_details = array(
+    'title' => "Mens Premium Boxer - Combo Pack",
+    'sku' => "Boxer-V01",
+    'offer_price' => "499",
+    'regular_price' => "799",
+    'savings' => "৩০০ ৳ off"
+);
+
+// Size Options
+$size_options = array(
+    'M' => "M (ঘেষাড়-৩০-৩২-ইঞ্চি",
+    'L' => "L (ঘেষাড়-৩২-৩৪-ইঞ্চি", 
+    'XL' => "XL (ঘেষাড়-৩৪-৩৬-ইঞ্চি",
+    'XXL' => "XXL (ঘেষাড়-৩৬-৩৮-ইঞ্চি"
+);
+
+// Form Labels
+$form_labels = array(
+    'name' => "আপনার নাম লিখুন *",
+    'phone' => "ফোন নাম্বর লিখুন *",
+    'address' => "আপনার সম্পূর্ণ ঠিকানা লিখুন *",
+    'district' => "জেলা নির্বাচন *"
+);
+
+// District Options
+$districts = array(
+    '' => "জেলা নাম্বর, রোড, থানাডাকঘর, জেলার নাম, জেলা",
+    'dhaka' => "ঢাকা",
+    'chittagong' => "চট্টগ্রাম", 
+    'rajshahi' => "রাজশাহী",
+    'khulna' => "খুলনা",
+    'barisal' => "বরিশাল",
+    'sylhet' => "সিলেট",
+    'rangpur' => "রংপুর",
+    'mymensingh' => "ময়মনসিংহ"
+);
+
+// Order Form Section
+$order_form = array(
+    'title' => "অর্ডার টি সম্পূর্ণ করুতে আপনার নাম,<br>মোবাইল নাম্বার ও ঠিকানা নিচে লিখুন",
+    'subtitle' => "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
+    'billing_title' => "বিলিং ডিটেইল",
+    'order_summary_title' => "অর্ডার সারাংশ (+)",
+    'submit_button' => "অর্ডার টি কনফার্ম করুন"
+);
+
+// Footer Section
+$footer_text = "&copy; 2025 FitZen. All Rights Reserved";
+?>
+
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="<?php echo $site_language; ?>">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php echo $site_charset; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mens Premium Boxer - Combo Pack | FitZen</title>
+    <title><?php echo $site_title; ?></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <style>
         * {
@@ -1002,9 +1112,9 @@
     <section class="hero-banner">
         <div class="container">
             <h1>
-                <div class="line1">৩ পিচ প্রিমিয়াম বক্সার -</div>
-                <div class="line2">৪৯৯ টাকা মাত্র</div>
-                <div class="line3">ডেলিভার চার্জ ফ্রি</div>
+                <div class="line1"><?php echo $hero_banner['line1']; ?></div>
+                <div class="line2"><?php echo $hero_banner['line2']; ?></div>
+                <div class="line3"><?php echo $hero_banner['line3']; ?></div>
             </h1>
         </div>
     </section>
@@ -1012,14 +1122,14 @@
     <!-- Quality Badge -->
     <section class="quality-badge">
         <div class="container">
-            <p>১০০% ফ্যাশিক কাস্টমার <span class="stars">⭐⭐⭐⭐⭐</span></p>
+            <p><?php echo $quality_badge; ?> <span class="stars">⭐⭐⭐⭐⭐</span></p>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <a href="#order" class="cta-button">অর্ডার করতে ক্লিক করুন</a>
+            <a href="#order" class="cta-button"><?php echo $cta_button_text; ?></a>
         </div>
     </section>
 
@@ -1027,7 +1137,7 @@
     <section class="cta-section" style="padding-top: 0;">
         <div class="container">
             <div class="notice-box">
-                <p>আমরা নিচ্চিত সম্পূর্ণ কম্বো স্পেক্ট্রর কাপড় দিয়ে ডেরি খাকিনা খুবি কয়েক্টাই।</p>
+                <p><?php echo $notice_text; ?></p>
             </div>
         </div>
     </section>
@@ -1036,7 +1146,7 @@
     <section class="product-showcase">
         <div class="container">
             <div class="product-image-wrapper">
-                <img src="images/landing2hero.jpg" alt="FitZen Best Mens Boxer">
+                <img src="<?php echo $product_images['showcase']; ?>" alt="FitZen Best Mens Boxer">
             </div>
         </div>
     </section>
@@ -1044,18 +1154,19 @@
     <!-- Price Section -->
     <section class="price-section">
         <div class="container">
-            <h2>রেগুলার মূল্য ৭৯৯ টাকা।<br>অফার প্রাইস মাত্র ৪৯৯ টাকা।<br>(ডেলিভার চার্জ ফ্রি)</h2>
-            <a href="#order" class="cta-button">অর্ডার করতে ক্লিক করুন</a>
+            <h2><?php echo $price_section['title']; ?></h2>
+            <a href="#order" class="cta-button"><?php echo $cta_button_text; ?></a>
         </div>
     </section>
 
     <!-- Reviews Section -->
     <section class="reviews-section">
         <div class="container">
-            <h2>From Our Happy Customer</h2>
+            <h2><?php echo $reviews_title; ?></h2>
             
             <div class="swiper reviewSwiper">
                 <div class="swiper-wrapper">
+                    <?php foreach($reviews as $review): ?>
                     <div class="swiper-slide">
                         <div class="review-card">
                             <div class="review-header">From Our<br>Happy Customer</div>
@@ -1063,60 +1174,17 @@
                                 <div class="reviewer-info">
                                     <div class="reviewer-avatar"></div>
                                     <div>
-                                        <div class="reviewer-name">Mohammad Abdur Rahim · <a href="#" class="follow-link">Follow</a></div>
+                                        <div class="reviewer-name"><?php echo $review['name']; ?> · <a href="#" class="follow-link">Follow</a></div>
                                     </div>
                                 </div>
                                 <div class="review-text">
-                                    আলহামদুলিল্লাহ!<br>
-                                    পৌছেছে পুরুষ মনঃ বুকের ভালো লেগেছে, লম্বন আন্দামহাদের ❤️<br>
-                                    এবর তাহ ছেড়াড় বট করা হচ্ছে উনাদের বিতরিত 🔥<br>
-                                    আনার ভালো লেগেছে। খর্বা সাম্পা-আবারে ❤️<br>
-                                    দেয়া খর্ব গেছে ভাবিন টাইশিমাহার লোগাম্বরু সান করব, আসিন ❤️<br>
-                                    আপনাদের উপশর ধন্যবাদ <span style="color: #1976d2;">FitZen</span>
+                                    <?php echo $review['text']; ?>
                                 </div>
                             </div>
                             <div class="review-stars">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
-
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-header">From Our<br>Happy Customer</div>
-                            <div class="review-content">
-                                <div class="reviewer-info">
-                                    <div class="reviewer-avatar"></div>
-                                    <div>
-                                        <div class="reviewer-name">Shariful Islam</div>
-                                    </div>
-                                </div>
-                                <div class="review-text">
-                                    Firstly it's a good quality as a price & gets quick delivery. You guys try to it honestly.<br>
-                                    Thanks to FitZen. Keep going...❤️
-                                </div>
-                            </div>
-                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-header">From Our<br>Happy Customer</div>
-                            <div class="review-content">
-                                <div class="reviewer-info">
-                                    <div class="reviewer-avatar"></div>
-                                    <div>
-                                        <div class="reviewer-name">KamruzZaman Tapu</div>
-                                    </div>
-                                </div>
-                                <div class="review-text">
-                                    আলহামদুলিল্লাহ, প্রজাই ভাত পেয়েছি।<br>
-                                    আনেক ভালো এবর সফট। হাইলি<br>
-                                    রিকমান্ডেড।।
-                                </div>
-                            </div>
-                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -1126,29 +1194,28 @@
     <!-- Order Form Section -->
     <section class="order-form-section" id="order">
         <div class="container">
-            <h2>অর্ডার টি সম্পূর্ণ করুতে আপনার নাম,<br>মোবাইল নাম্বার ও ঠিকানা নিচে লিখুন</h2>
-            <p class="form-subtitle">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+            <h2><?php echo $order_form['title']; ?></h2>
+            <p class="form-subtitle"><?php echo $order_form['subtitle']; ?></p>
 
             <div class="form-container">
                 <form id="orderForm">
                     <div class="product-info">
-                        <img src="images/landing2form.jpg" alt="Mens Premium Boxer">
+                        <img src="<?php echo $product_images['form']; ?>" alt="Mens Premium Boxer">
                         <div class="product-details">
-                            <h3>Mens Premium Boxer - Combo Pack</h3>
-                            <p class="sku">SKU: Boxer-V01</p>
+                            <h3><?php echo $product_details['title']; ?></h3>
+                            <p class="sku">SKU: <?php echo $product_details['sku']; ?></p>
                             <div class="price-display">
-                                <span class="offer-price">৳499</span>
-                                <span class="regular-price">৳799</span>
-                                <span class="savings-badge">৩০০ ৳ off</span>
+                                <span class="offer-price">৳<?php echo $product_details['offer_price']; ?></span>
+                                <span class="regular-price">৳<?php echo $product_details['regular_price']; ?></span>
+                                <span class="savings-badge"><?php echo $product_details['savings']; ?></span>
                             </div>
 
                             <div class="size-selector">
                                 <label>Select Your Size:</label>
                                 <div class="size-options">
-                                    <div class="size-option" data-size="M">M (ঘেষাড়-৩০-৩২-ইঞ্চি</div>
-                                    <div class="size-option" data-size="L">L (ঘেষাড়-৩২-৩৪-ইঞ্চি</div>
-                                    <div class="size-option" data-size="XL">XL (ঘেষাড়-৩৪-৩৬-ইঞ্চি</div>
-                                    <div class="size-option" data-size="XXL">XXL (ঘেষাড়-৩৬-৩৮-ইঞ্চি</div>
+                                    <?php foreach($size_options as $size => $label): ?>
+                                    <div class="size-option" data-size="<?php echo $size; ?>"><?php echo $label; ?></div>
+                                    <?php endforeach; ?>
                                 </div>
                                 <p class="size-status" id="sizeStatus">STATUS: PLEASE SELECT A VARIATION</p>
                             </div>
@@ -1165,35 +1232,29 @@
                     </div>
 
                     <div class="form-section">
-                        <h3>বিলিং ডিটেইল</h3>
+                        <h3><?php echo $order_form['billing_title']; ?></h3>
 
                         <div class="form-group">
-                            <label for="name">আপনার নাম লিখুন *</label>
+                            <label for="name"><?php echo $form_labels['name']; ?></label>
                             <input type="text" id="name" name="name" placeholder="আপনার পূর্ণ নাম লিখুন" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="phone">ফোন নাম্বর লিখুন *</label>
+                            <label for="phone"><?php echo $form_labels['phone']; ?></label>
                             <input type="tel" id="phone" name="phone" placeholder="আপনার ১১ সংখ্যার নাম্বার লিখুন" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="address">আপনার সম্পূর্ণ ঠিকানা লিখুন *</label>
+                            <label for="address"><?php echo $form_labels['address']; ?></label>
                             <textarea id="address" name="address" rows="3" placeholder="বাসা নাম্বর, রোড, থানাডাকঘর, জেলা" required></textarea>
                         </div>
 
                         <div class="form-group">
-                            <label for="district">জেলা নির্বাচন *</label>
+                            <label for="district"><?php echo $form_labels['district']; ?></label>
                             <select id="district" name="district" required>
-                                <option value="">জেলা নাম্বর, রোড, থানাডাকঘর, জেলার নাম, জেলা</option>
-                                <option value="dhaka">ঢাকা</option>
-                                <option value="chittagong">চট্টগ্রাম</option>
-                                <option value="rajshahi">রাজশাহী</option>
-                                <option value="khulna">খুলনা</option>
-                                <option value="barisal">বরিশাল</option>
-                                <option value="sylhet">সিলেট</option>
-                                <option value="rangpur">রংপুর</option>
-                                <option value="mymensingh">ময়মনসিংহ</option>
+                                <?php foreach($districts as $value => $name): ?>
+                                <option value="<?php echo $value; ?>"><?php echo $name; ?></option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
 
@@ -1209,7 +1270,7 @@
                     </div>
 
                     <div class="order-summary">
-                        <h3>অর্ডার সারাংশ (+)</h3>
+                        <h3><?php echo $order_form['order_summary_title']; ?></h3>
                         <div class="summary-row summary-total">
                             <span>টোটাল</span>
                             <span id="totalPrice">৳0</span>
@@ -1217,7 +1278,7 @@
                     </div>
 
                     <button type="submit" class="submit-button">
-                        অর্ডার টি কনফার্ম করুন ৳<span id="finalTotal">0</span>
+                        <?php echo $order_form['submit_button']; ?> ৳<span id="finalTotal">0</span>
                     </button>
                 </form>
             </div>
@@ -1227,7 +1288,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 FitZen. All Rights Reserved</p>
+            <p><?php echo $footer_text; ?></p>
         </div>
     </footer>
 
@@ -1299,7 +1360,7 @@
 
         // Update Total
         function updateTotal() {
-            const price = 499;
+            const price = <?php echo $product_details['offer_price']; ?>;
             const quantity = parseInt(quantityInput.value);
             const total = price * quantity;
 

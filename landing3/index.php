@@ -1,9 +1,217 @@
+<?php
+// Site Configuration
+$site_title = "Premium Socks - অরিজিনাল মোজা";
+$site_language = "bn";
+$site_charset = "UTF-8";
+
+// Header Banner
+$header_banner = "সারাদিন আরামদায়ক পা, সুরক্ষা ও দুর্গন্ধমুক্ত রাখতে ১০০% কটন মোজার জাদু অনুভব করুন!";
+
+// Hero Slider Section
+$hero_slides = array(
+    array(
+        'title' => "প্রিমিয়াম কোয়ালিটি সক্স",
+        'description' => "১০০% খাঁটি কটন দিয়ে তৈরি আরামদায়ক মোজা। গ্রীষ্মের গরম বা শীতের ঠান্ডা - সব ঋতুতে আপনার পায়ের সেরা সঙ্গী।",
+        'image' => "images/sock1.webp",
+        'alt' => "স্পোর্টস সক্স"
+    ),
+    array(
+        'title' => "ক্যাজুয়াল সক্স",
+        'description' => "দৈনন্দিন ব্যবহারের জন্য নরম ও আরামদায়ক ক্যাজুয়াল সক্স। আপনার প্রতিদিনের স্টাইলের সাথে মানানসই।",
+        'image' => "images/sock2.webp",
+        'alt' => "ক্যাজুয়াল সক্স"
+    ),
+    array(
+        'title' => "ফ্যাশন সক্স",
+        'description' => "স্টাইলিশ লুকের জন্য ফ্যাশনেবল সক্স। বিভিন্ন রং ও ডিজাইনে আপনার ব্যক্তিত্ব ফুটিয়ে তুলুন।",
+        'image' => "images/sock3.webp",
+        'alt' => "ফ্যাশন সক্স"
+    ),
+    array(
+        'title' => "উইন্টার সক্স",
+        'description' => "শীতের জন্য বিশেষভাবে তৈরি উইন্টার সক্স। আপনার পা রাখবে উষ্ণ ও আরামদায়ক শীতের পুরো সময় জুড়ে।",
+        'image' => "images/sock4.webp",
+        'alt' => "উইন্টার সক্স"
+    ),
+    array(
+        'title' => "এনকি সক্স",
+        'description' => "পায়ের গোড়ালি সুরক্ষা প্রদানকারী এনকি সক্স। ব্যায়াম ও দৈনন্দিন কাজে অতিরিক্ত আরাম।",
+        'image' => "images/sock5.webp",
+        'alt' => "এনকি সক্স"
+    ),
+    array(
+        'title' => "নো-শো সক্স",
+        'description' => "ফরমাল পরিস্থিতির জন্য নো-শো সক্স। জুতার ভিতরে অদৃশ্য থেকে দেয় সর্বোচ্চ আরাম।",
+        'image' => "images/sock6.webp",
+        'alt' => "নো-শো সক্স"
+    )
+);
+
+// Price Section
+$price_section = array(
+    'discount_badge' => "৩৬% ছাড়",
+    'original_price' => "রেগুলার মূল্য ৭৫০৳",
+    'current_price' => "অফার মূল্য ৪৮০৳",
+    'free_delivery' => "✓ ফ্রি হোম ডেলিভারি সারা বাংলাদেশ",
+    'button_text' => "অর্ডার করুন 🛒"
+);
+
+// Product Details Section
+$product_details = array(
+    'title' => "প্রোডাক্টের বিবরণ",
+    'features' => array(
+        "ইউনিসেক্স ও বহুমুখী ডিজাইন: অফিস থেকে ক্যাজুয়াল আউটিং—সব পরিবেশে মানানসই।",
+        "টেকসইতা ও আরামদায়ক অনুভূতি: কঠিন রিংশেড প্রিন্টি পায়ের থাম ও দুর্গন্ধ প্রতিরোধ করে।",
+        "দীর্ঘস্থায়ী মান ও স্থিতি: প্রতিদিনের ব্যবহারে প্রশংসা মান বজায় থাকে।",
+        "সর্বশ্রেষ্ঠ সমাধান: প্রতিদিনের প্রয়োজনে নিখুঁত মোজা।",
+        "পায়ের স্বাস্থ্য সুরক্ষায় উপকৃত: উন্নত ফেব্রিক পায়ের আরাম ও সন্তোষ নিশ্চিত করে।"
+    )
+);
+
+// Why Choose Us Section
+$why_choose_us = array(
+    'title' => "কেন আমাদের থেকে নেবেন?",
+    'reasons' => array(
+        "চেক করে নেওয়ার সুবিধা।",
+        "পণ্যের কোন সমস্যা থাকলে ডেলিভারি চার্জ ছাড়াই রিটার্ন করার সুবিধা।",
+        "ঢাকায় নিজস্ব প্রোডাকশন হাউস বিদ্যমান।",
+        "আমাদের থেকে প্রোডাক্ট নিয়ে হাজারো সন্তুষ্ট কাস্টমার।",
+        "দেশের বাইরেও প্রেরণ সেবা করে থাকি।",
+        "১০০০+ সন্তুষ্ট কাস্টমার রয়েছে।"
+    )
+);
+
+// Testimonials Section
+$testimonials = array(
+    'title' => "গ্রাহকদের মতামত",
+    'reviews' => array(
+        array(
+            'name' => "রহিম আহমেদ",
+            'text' => "অসাধারণ কোয়ালিটি! আমি দীর্ঘদিন ধরে এই মোজা ব্যবহার করছি। খুব আরামদায়ক এবং টেকসই।",
+            'image' => "images/review1.webp",
+            'alt' => "রিভিউ ১"
+        ),
+        array(
+            'name' => "সুমাইয়া আক্তার",
+            'text' => "পায়ের দুর্গন্ধ সম্পূর্ণভাবে চলে গেছে। এখন আত্মবিশ্বাসের সাথে জুতা খুলতে পারি।",
+            'image' => "images/review2.webp",
+            'alt' => "রিভিউ ২"
+        ),
+        array(
+            'name' => "করিম উদ্দিন",
+            'text' => "দামের তুলনায় কোয়ালিটি অনেক ভালো। পরিবারের সবাই এখন এই মোজা ব্যবহার করে।",
+            'image' => "images/review3.webp",
+            'alt' => "রিভিউ ৩"
+        )
+    )
+);
+
+// Video Section
+$video_section = array(
+    'title' => "আমাদের প্রোডাক্ট ভিডিও",
+    'placeholder_text' => "প্রোডাক্ট ভিডিও - ক্লিক করে দেখুন"
+);
+
+// Order Form Section
+$order_form = array(
+    'title' => "অর্ডার ফর্ম",
+    'subtitle' => "নিচের ফর্মটি পূরণ করে অর্ডার সম্পন্ন করুন"
+);
+
+// Products for Order Form
+$products = array(
+    array(
+        'id' => "product1",
+        'name' => "স্পোর্টস সক্স",
+        'title' => "স্পোর্টস সক্স - ব্যায়ামের সময় আরামদায়ক, সুতি কাপড় দিয়ে তৈরি",
+        'image' => "images/sock1.webp",
+        'alt' => "স্পোর্টস সক্স",
+        'price' => "৪৮০"
+    ),
+    array(
+        'id' => "product2",
+        'name' => "ক্যাজুয়াল সক্স",
+        'title' => "ক্যাজুয়াল সক্স - দৈনন্দিন ব্যবহারের জন্য, নরম ও আরামদায়ক",
+        'image' => "images/sock2.webp",
+        'alt' => "ক্যাজুয়াল সক্স",
+        'price' => "৪৮০"
+    )
+);
+
+// Form Labels
+$form_labels = array(
+    'name' => "পুরো নাম *",
+    'phone' => "মোবাইল নম্বর *",
+    'address' => "ঠিকানা *",
+    'district' => "জেলা *"
+);
+
+// District Options
+$districts = array(
+    "" => "জেলা নির্বাচন করুন",
+    "ঢাকা" => "ঢাকা",
+    "চট্টগ্রাম" => "চট্টগ্রাম",
+    "রাজশাহী" => "রাজশাহী",
+    "খুলনা" => "খুলনা",
+    "বরিশাল" => "বরিশাল",
+    "সিলেট" => "সিলেট",
+    "রংপুর" => "রংপুর",
+    "ময়মনসিংহ" => "ময়মনসিংহ"
+);
+
+// Order Summary
+$order_summary = array(
+    'title' => "অর্ডার সারাংশ",
+    'product_price' => "পণ্যের মূল্য:",
+    'delivery_charge' => "ডেলিভারি চার্জ:",
+    'total' => "মোট:"
+);
+
+// Payment Options
+$payment_options = array(
+    'cash_on_delivery' => "ক্যাশ অন ডেলিভারি"
+);
+
+// Submit Button
+$submit_button = "অর্ডার নিশ্চিত করুন";
+
+// Success Message
+$success_message = "আপনার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে! আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+
+// Delivery Information
+$delivery_info = array(
+    "🚚 অর্ডার দিলে ২৪-৪৮ ঘন্টার মধ্যে ডেলিভারি পেয়ে যাবেন (ঢাকার ভিতরে)",
+    "🚚 অন্যান্য জেলায় ৩-৫ কার্যদিবসের মধ্যে ডেলিভারি"
+);
+
+// Contact Information
+$contact_info = array(
+    'title' => "সরাসরি অর্ডার করতে কল করুন",
+    'phone_number' => "+৮৮০ XXXXXXXXXX",
+    'timing' => "সকাল ৯টা থেকে রাত ১০টা পর্যন্ত"
+);
+
+// Social Media Links
+$social_links = array(
+    'whatsapp' => array(
+        'class' => "whatsapp",
+        'icon' => "📱",
+        'text' => "WhatsApp"
+    ),
+    'messenger' => array(
+        'class' => "messenger",
+        'icon' => "💬",
+        'text' => "Messenger"
+    )
+);
+?>
+
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="<?php echo $site_language; ?>">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php echo $site_charset; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Socks - অরিজিনাল মোজা</title>
+    <title><?php echo $site_title; ?></title>
     <style>
         * {
             margin: 0;
@@ -845,96 +1053,27 @@
 </head>
 <body>
     <div class="header-banner">
-        "সারাদিন আরামদায়ক পা, সুরক্ষা ও দুর্গন্ধমুক্ত রাখতে ১০০% কটন মোজার জাদু অনুভব করুন!"
+        <?php echo $header_banner; ?>
     </div>
 
     <!-- Hero Slider Section -->
     <div class="hero-section">
         <div class="hero-slider">
             <div class="hero-slides">
-                <!-- Slide 1 -->
+                <?php foreach($hero_slides as $index => $slide): ?>
                 <div class="hero-slide">
                     <div class="hero-slide-content">
                         <div class="hero-text">
-                            <h1>প্রিমিয়াম কোয়ালিটি সক্স</h1>
-                            <p>১০০% খাঁটি কটন দিয়ে তৈরি আরামদায়ক মোজা। গ্রীষ্মের গরম বা শীতের ঠান্ডা - সব ঋতুতে আপনার পায়ের সেরা সঙ্গী।</p>
+                            <h1><?php echo $slide['title']; ?></h1>
+                            <p><?php echo $slide['description']; ?></p>
                             <button class="hero-btn" onclick="scrollToOrder()">এখনই অর্ডার করুন 🛒</button>
                         </div>
                         <div class="hero-image">
-                            <img src="images/sock1.webp" alt="স্পোর্টস সক্স">
+                            <img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['alt']; ?>">
                         </div>
                     </div>
                 </div>
-                
-                <!-- Slide 2 -->
-                <div class="hero-slide">
-                    <div class="hero-slide-content">
-                        <div class="hero-text">
-                            <h1>ক্যাজুয়াল সক্স</h1>
-                            <p>দৈনন্দিন ব্যবহারের জন্য নরম ও আরামদায়ক ক্যাজুয়াল সক্স। আপনার প্রতিদিনের স্টাইলের সাথে মানানসই।</p>
-                            <button class="hero-btn" onclick="scrollToOrder()">এখনই অর্ডার করুন 🛒</button>
-                        </div>
-                        <div class="hero-image">
-                            <img src="images/sock2.webp" alt="ক্যাজুয়াল সক্স">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Slide 3 -->
-                <div class="hero-slide">
-                    <div class="hero-slide-content">
-                        <div class="hero-text">
-                            <h1>ফ্যাশন সক্স</h1>
-                            <p>স্টাইলিশ লুকের জন্য ফ্যাশনেবল সক্স। বিভিন্ন রং ও ডিজাইনে আপনার ব্যক্তিত্ব ফুটিয়ে তুলুন।</p>
-                            <button class="hero-btn" onclick="scrollToOrder()">এখনই অর্ডার করুন 🛒</button>
-                        </div>
-                        <div class="hero-image">
-                            <img src="images/sock3.webp" alt="ফ্যাশন সক্স">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Slide 4 -->
-                <div class="hero-slide">
-                    <div class="hero-slide-content">
-                        <div class="hero-text">
-                            <h1>উইন্টার সক্স</h1>
-                            <p>শীতের জন্য বিশেষভাবে তৈরি উইন্টার সক্স। আপনার পা রাখবে উষ্ণ ও আরামদায়ক শীতের পুরো সময় জুড়ে।</p>
-                            <button class="hero-btn" onclick="scrollToOrder()">এখনই অর্ডার করুন 🛒</button>
-                        </div>
-                        <div class="hero-image">
-                            <img src="images/sock4.webp" alt="উইন্টার সক্স">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Slide 5 -->
-                <div class="hero-slide">
-                    <div class="hero-slide-content">
-                        <div class="hero-text">
-                            <h1>এনকি সক্স</h1>
-                            <p>পায়ের গোড়ালি সুরক্ষা প্রদানকারী এনকি সক্স। ব্যায়াম ও দৈনন্দিন কাজে অতিরিক্ত আরাম।</p>
-                            <button class="hero-btn" onclick="scrollToOrder()">এখনই অর্ডার করুন 🛒</button>
-                        </div>
-                        <div class="hero-image">
-                            <img src="images/sock5.webp" alt="এনকি সক্স">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Slide 6 -->
-                <div class="hero-slide">
-                    <div class="hero-slide-content">
-                        <div class="hero-text">
-                            <h1>নো-শো সক্স</h1>
-                            <p>ফরমাল পরিস্থিতির জন্য নো-শো সক্স। জুতার ভিতরে অদৃশ্য থেকে দেয় সর্বোচ্চ আরাম।</p>
-                            <button class="hero-btn" onclick="scrollToOrder()">এখনই অর্ডার করুন 🛒</button>
-                        </div>
-                        <div class="hero-image">
-                            <img src="images/sock6.webp" alt="নো-শো সক্স">
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
             
             <!-- Slider Navigation -->
@@ -944,12 +1083,9 @@
             <!-- Slider Dots -->
             <div class="slider-controls">
                 <div class="slider-dots">
-                    <span class="slider-dot active" data-index="0"></span>
-                    <span class="slider-dot" data-index="1"></span>
-                    <span class="slider-dot" data-index="2"></span>
-                    <span class="slider-dot" data-index="3"></span>
-                    <span class="slider-dot" data-index="4"></span>
-                    <span class="slider-dot" data-index="5"></span>
+                    <?php for($i = 0; $i < count($hero_slides); $i++): ?>
+                    <span class="slider-dot <?php echo $i === 0 ? 'active' : ''; ?>" data-index="<?php echo $i; ?>"></span>
+                    <?php endfor; ?>
                 </div>
             </div>
         </div>
@@ -957,76 +1093,64 @@
 
     <div class="container">
         <div class="price-section">
-            <div class="discount-badge">৩৬% ছাড়</div>
-            <p class="price-original">রেগুলার মূল্য ৭৫০৳</p>
-            <p class="price-current">অফার মূল্য ৪৮০৳</p>
-            <p class="free-delivery">✓ ফ্রি হোম ডেলিভারি সারা বাংলাদেশ</p>
-            <button class="order-button" onclick="scrollToOrder()">অর্ডার করুন 🛒</button>
+            <div class="discount-badge"><?php echo $price_section['discount_badge']; ?></div>
+            <p class="price-original"><?php echo $price_section['original_price']; ?></p>
+            <p class="price-current"><?php echo $price_section['current_price']; ?></p>
+            <p class="free-delivery"><?php echo $price_section['free_delivery']; ?></p>
+            <button class="order-button" onclick="scrollToOrder()"><?php echo $price_section['button_text']; ?></button>
         </div>
 
         <div class="details-section">
-            <div class="details-header">প্রোডাক্টের বিবরণ</div>
+            <div class="details-header"><?php echo $product_details['title']; ?></div>
             <ul class="details-list">
-                <li>ইউনিসেক্স ও বহুমুখী ডিজাইন: অফিস থেকে ক্যাজুয়াল আউটিং—সব পরিবেশে মানানসই।</li>
-                <li>টেকসইতা ও আরামদায়ক অনুভূতি: কঠিন রিংশেড প্রিন্টি পায়ের থাম ও দুর্গন্ধ প্রতিরোধ করে।</li>
-                <li>দীর্ঘস্থায়ী মান ও স্থিতি: প্রতিদিনের ব্যবহারে প্রশংসা মান বজায় থাকে।</li>
-                <li>সর্বশ্রেষ্ঠ সমাধান: প্রতিদিনের প্রয়োজনে নিখুঁত মোজা।</li>
-                <li>পায়ের স্বাস্থ্য সুরক্ষায় উপকৃত: উন্নত ফেব্রিক পায়ের আরাম ও সন্তোষ নিশ্চিত করে।</li>
+                <?php foreach($product_details['features'] as $feature): ?>
+                <li><?php echo $feature; ?></li>
+                <?php endforeach; ?>
             </ul>
 
-            <div class="details-header" style="margin-top: 30px;">কেন আমাদের থেকে নেবেন?</div>
+            <div class="details-header" style="margin-top: 30px;"><?php echo $why_choose_us['title']; ?></div>
             <ul class="details-list">
-                <li>চেক করে নেওয়ার সুবিধা।</li>
-                <li>পণ্যের কোন সমস্যা থাকলে ডেলিভারি চার্জ ছাড়াই রিটার্ন করার সুবিধা।</li>
-                <li>ঢাকায় নিজস্ব প্রোডাকশন হাউস বিদ্যমান।</li>
-                <li>আমাদের থেকে প্রোডাক্ট নিয়ে হাজারো সন্তুষ্ট কাস্টমার।</li>
-                <li>দেশের বাইরেও প্রেরণ সেবা করে থাকি।</li>
-                <li>১০০০+ সন্তুষ্ট কাস্টমার রয়েছে।</li>
+                <?php foreach($why_choose_us['reasons'] as $reason): ?>
+                <li><?php echo $reason; ?></li>
+                <?php endforeach; ?>
             </ul>
         </div>
     </div>
 
     <div class="testimonials-section">
-        <h2>গ্রাহকদের মতামত</h2>
+        <h2><?php echo $testimonials['title']; ?></h2>
         <div class="testimonials-slider">
+            <?php foreach($testimonials['reviews'] as $review): ?>
             <div class="testimonial-card">
-                <img src="images/review1.webp" alt="রিভিউ ১" class="testimonial-image">
-                <h3>রহিম আহমেদ</h3>
-                <p>অসাধারণ কোয়ালিটি! আমি দীর্ঘদিন ধরে এই মোজা ব্যবহার করছি। খুব আরামদায়ক এবং টেকসই।</p>
+                <img src="<?php echo $review['image']; ?>" alt="<?php echo $review['alt']; ?>" class="testimonial-image">
+                <h3><?php echo $review['name']; ?></h3>
+                <p><?php echo $review['text']; ?></p>
             </div>
-            <div class="testimonial-card">
-                <img src="images/review2.webp" alt="রিভিউ ২" class="testimonial-image">
-                <h3>সুমাইয়া আক্তার</h3>
-                <p>পায়ের দুর্গন্ধ সম্পূর্ণভাবে চলে গেছে। এখন আত্মবিশ্বাসের সাথে জুতা খুলতে পারি।</p>
-            </div>
-            <div class="testimonial-card">
-                <img src="images/review3.webp" alt="রিভিউ ৩" class="testimonial-image">
-                <h3>করিম উদ্দিন</h3>
-                <p>দামের তুলনায় কোয়ালিটি অনেক ভালো। পরিবারের সবাই এখন এই মোজা ব্যবহার করে।</p>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 
     <div class="video-section">
-        <h2>আমাদের প্রোডাক্ট ভিডিও</h2>
+        <h2><?php echo $video_section['title']; ?></h2>
         <div class="video-container">
             <div class="video-placeholder">
-                প্রোডাক্ট ভিডিও - ক্লিক করে দেখুন
+                <?php echo $video_section['placeholder_text']; ?>
             </div>
         </div>
     </div>
 
     <div class="order-form-section">
-        <h2 class="form-title">অর্ডার ফর্ম</h2>
-        <p class="form-subtitle">নিচের ফর্মটি পূরণ করে অর্ডার সম্পন্ন করুন</p>
+        <h2 class="form-title"><?php echo $order_form['title']; ?></h2>
+        <p class="form-subtitle"><?php echo $order_form['subtitle']; ?></p>
         
         <div class="product-selection">
+            <?php foreach($products as $product): ?>
             <div class="product-card">
                 <div class="product-header">
-                    <input type="checkbox" class="product-checkbox" id="product1" name="product" value="স্পোর্টস সক্স">
-                    <img src="images/sock1.webp" alt="স্পোর্টস সক্স" class="product-image">
-                    <label for="product1" class="product-title">স্পোর্টস সক্স - ব্যায়ামের সময় আরামদায়ক, সুতি কাপড় দিয়ে তৈরি</label>
-                    <span class="product-price">৳ ৪৮০</span>
+                    <input type="checkbox" class="product-checkbox" id="<?php echo $product['id']; ?>" name="product" value="<?php echo $product['name']; ?>">
+                    <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['alt']; ?>" class="product-image">
+                    <label for="<?php echo $product['id']; ?>" class="product-title"><?php echo $product['title']; ?></label>
+                    <span class="product-price">৳ <?php echo $product['price']; ?></span>
                 </div>
                 <div class="quantity-control">
                     <button class="quantity-btn minus">-</button>
@@ -1034,98 +1158,81 @@
                     <button class="quantity-btn plus">+</button>
                 </div>
             </div>
-            
-            <div class="product-card">
-                <div class="product-header">
-                    <input type="checkbox" class="product-checkbox" id="product2" name="product" value="ক্যাজুয়াল সক্স">
-                    <img src="images/sock2.webp" alt="ক্যাজুয়াল সক্স" class="product-image">
-                    <label for="product2" class="product-title">ক্যাজুয়াল সক্স - দৈনন্দিন ব্যবহারের জন্য, নরম ও আরামদায়ক</label>
-                    <span class="product-price">৳ ৪৮০</span>
-                </div>
-                <div class="quantity-control">
-                    <button class="quantity-btn minus">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1">
-                    <button class="quantity-btn plus">+</button>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
 
         <div class="form-group">
-            <label for="name">পুরো নাম *</label>
+            <label for="name"><?php echo $form_labels['name']; ?></label>
             <input type="text" id="name" name="name" required>
             <div class="error-message" id="nameError">নাম অবশ্যই দিতে হবে</div>
         </div>
 
         <div class="form-group">
-            <label for="phone">মোবাইল নম্বর *</label>
+            <label for="phone"><?php echo $form_labels['phone']; ?></label>
             <input type="tel" id="phone" name="phone" required>
             <div class="error-message" id="phoneError">সঠিক মোবাইল নম্বর দিন</div>
         </div>
 
         <div class="form-group">
-            <label for="address">ঠিকানা *</label>
+            <label for="address"><?php echo $form_labels['address']; ?></label>
             <textarea id="address" name="address" rows="3" required></textarea>
             <div class="error-message" id="addressError">ঠিকানা অবশ্যই দিতে হবে</div>
         </div>
 
         <div class="form-group">
-            <label for="district">জেলা *</label>
+            <label for="district"><?php echo $form_labels['district']; ?></label>
             <select id="district" name="district" required>
-                <option value="">জেলা নির্বাচন করুন</option>
-                <option value="ঢাকা">ঢাকা</option>
-                <option value="চট্টগ্রাম">চট্টগ্রাম</option>
-                <option value="রাজশাহী">রাজশাহী</option>
-                <option value="খুলনা">খুলনা</option>
-                <option value="বরিশাল">বরিশাল</option>
-                <option value="সিলেট">সিলেট</option>
-                <option value="রংপুর">রংপুর</option>
-                <option value="ময়মনসিংহ">ময়মনসিংহ</option>
+                <?php foreach($districts as $value => $name): ?>
+                <option value="<?php echo $value; ?>"><?php echo $name; ?></option>
+                <?php endforeach; ?>
             </select>
             <div class="error-message" id="districtError">জেলা নির্বাচন করুন</div>
         </div>
 
         <div class="order-summary">
-            <h3>অর্ডার সারাংশ</h3>
+            <h3><?php echo $order_summary['title']; ?></h3>
             <div class="order-summary-item">
-                <span>পণ্যের মূল্য:</span>
+                <span><?php echo $order_summary['product_price']; ?></span>
                 <span>৳ ০</span>
             </div>
             <div class="order-summary-item">
-                <span>ডেলিভারি চার্জ:</span>
+                <span><?php echo $order_summary['delivery_charge']; ?></span>
                 <span>৳ ০</span>
             </div>
             <div class="order-summary-item order-total">
-                <span>মোট:</span>
+                <span><?php echo $order_summary['total']; ?></span>
                 <span>৳ ০</span>
             </div>
         </div>
 
         <div class="payment-option">
             <input type="radio" id="cashOnDelivery" name="payment" value="cashOnDelivery" checked>
-            <label for="cashOnDelivery">ক্যাশ অন ডেলিভারি</label>
+            <label for="cashOnDelivery"><?php echo $payment_options['cash_on_delivery']; ?></label>
         </div>
 
-        <button type="submit" class="submit-button">অর্ডার নিশ্চিত করুন</button>
+        <button type="submit" class="submit-button"><?php echo $submit_button; ?></button>
         
         <div class="success-message" id="successMessage">
-            আপনার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে! আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।
+            <?php echo $success_message; ?>
         </div>
     </div>
 
     <div class="delivery-info">
-        <p>🚚 অর্ডার দিলে ২৪-৪৮ ঘন্টার মধ্যে ডেলিভারি পেয়ে যাবেন (ঢাকার ভিতরে)</p>
-        <p>🚚 অন্যান্য জেলায় ৩-৫ কার্যদিবসের মধ্যে ডেলিভারি</p>
+        <?php foreach($delivery_info as $info): ?>
+        <p><?php echo $info; ?></p>
+        <?php endforeach; ?>
     </div>
 
     <div class="contact-box">
-        <h2>সরাসরি অর্ডার করতে কল করুন</h2>
-        <a href="tel:+880XXXXXXXXXX" class="contact-number">+৮৮০ XXXXXXXXXX</a>
-        <p>সকাল ৯টা থেকে রাত ১০টা পর্যন্ত</p>
+        <h2><?php echo $contact_info['title']; ?></h2>
+        <a href="tel:<?php echo $contact_info['phone_number']; ?>" class="contact-number"><?php echo $contact_info['phone_number']; ?></a>
+        <p><?php echo $contact_info['timing']; ?></p>
     </div>
 
     <div class="social-links">
-        <a href="#" class="social-icon whatsapp">📱</a>
-        <a href="#" class="social-icon messenger">💬</a>
+        <?php foreach($social_links as $platform => $link): ?>
+        <a href="#" class="social-icon <?php echo $link['class']; ?>"><?php echo $link['icon']; ?></a>
+        <?php endforeach; ?>
     </div>
 
     <script>
